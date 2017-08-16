@@ -1,0 +1,4 @@
+(?i).git
+(?i)vendor
+*.csprj
+*.clpprj
