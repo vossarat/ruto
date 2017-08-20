@@ -1,51 +1,52 @@
-/* 
-
-#kaz {    
-padding-top: 150px;    
-		
-background-image: url(/images/bg.jpg);
-background-position: center; 
-background-size: contain;
-background-repeat: no-repeat; 
-
-}     
-
-#rus{
-background-image: url(/images/bg1.jpg);
-background-position: center center;    
-background-size: contain;
-background-repeat: no-repeat; 
+#datebook {
+    background-image: url('/images/datebook.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
 }
 
-
-.star-light:after{
-	
-background: #e5f7f9 !important;
-} 
-
-.navbar-custom{ 
-background: #008ca1 !important;
-}
-#kaz > div > div:nth-child(1) > div > h2
-{
-color:  #008ca1 !important;
-}*/
-
-/* секция кнопки перевода */
-#buttonTranslate { 
-	margin-bottom: -55px;
+.form-group-textarea {
+	/*margin-top: 150px !important;*/
+	margin-left: 30px !important; 
+	margin-right: 30px !important; 
 }
 
-#buttonTranslated { 
-	border-radius: 100px;
-}
-/***************************/
-
-#block {
-	display: none; 
+#textrus {
+	background: transparent;
 }
 
-#rus{
-    background:url('../images/datebook.jpg') no-repeat center center;
-    background-size:100% auto;    
-} 
+#order {
+	background-image: url('/images/order.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+}
+
+div.form-group > div > input, #translate {
+	/*background: transparent;*/
+	opacity: 0.7
+}
+
+.navbar {
+    border-radius: 0 !important;
+    margin-bottom: 0;
+}
+
+.navbar-custom {
+    background: #CCC; 
+}
+
+.navbar-brand {
+    float: none;
+    padding-left: 60px;
+}
+
+#buttonTranslated {
+	position: absolute;
+	top: 4%;
+	left: 26%;
+	width: 10%;
+	background: transparent;
+	border: none;	
+}
+

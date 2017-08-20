@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-    
+    <head>    
         <meta charset="utf-8">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,14 +12,14 @@
         <title>Перевод на казахский</title>
 
         <!-- Bootstrap Core CSS -->
-        <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Theme CSS -->
         <link href="{{ asset('css/default.min.css') }}" rel="stylesheet"> {{-- стиль темы --}}
         <link href="{{ asset('css/template.css') }}" rel="stylesheet"> {{-- добавленный стиль --}}
 
         <!-- Custom Fonts -->
-        <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+       	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -34,17 +33,11 @@
         <!-- Navigation -->
         @include('navigation')
 
-       <!-- Section RUS -->
-		@include('rus')
-        
-        <!-- Section ButtonTranslate -->
-        @include('button_translate')
-                
-		<!-- Section KAZ -->
-        @include('kaz')
+       <!-- Section datebook -->
+		@include('datebook')
         
          <!-- Section ButtonOrder -->
-        @include('button_order')
+        @include('order')
 
         <!-- Footer -->
         @include('footer')
@@ -58,13 +51,13 @@
 
  
         <!-- jQuery -->
-        <script src="{{ asset('js/jquery.min.js') }}"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
         <!-- Bootstrap Core JavaScript -->
-        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
         <!-- Plugin JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+       <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>-->
 
         {{-- javascript для форм
         <!-- Contact Form JavaScript -->
